@@ -1,0 +1,1138 @@
+/* fonts */
+@font-face
+{
+  font-family: futura;
+  src: url(FuturaCondensedExtraBold.otf) format('opentype');
+  font-size: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: sanFranBlack;
+  src: url(SFNSDisplayCondensed-Black.otf);
+}
+@font-face
+{
+  font-family: sanFranBold;
+  src: url(SanFranciscoDisplay-Bold.otf);
+}
+@font-face
+{
+  font-family: sanFran;
+  src: url(SFNS.ttf)
+}
+@font-face
+{
+  font-family: sanFranMed;
+  src: url(SanFranciscoDisplay-Medium.otf);
+}
+@font-face
+{
+  font-family: sanFranLight;
+  src: url(SFNSDisplayCondensed-Regular.otf);
+}
+@font-face
+{
+  font-family: sanFranHeavy;
+  src: url(SanFranciscoDisplay-Heavy.otf);
+}
+
+/* Generic  Classes */
+body
+{
+  font-family: nunito-sans, sans-serif;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+section
+{
+  overflow-x: hidden;
+}
+section.margin
+{
+  margin-top: 40px;
+  margin-left:0;
+  overflow-x: hidden
+}
+@media screen and (min-width: 700px) and (orientation: landscape)
+{
+  section.margin
+  {
+    margin-top:100px;
+    margin-left: 0;
+    overflow-x: hidden
+  }
+  section.paddedL
+  {
+    padding-left: 80px;
+    overflow-x: hidden
+  }
+  section.paddedR
+  {
+    padding-right: 80px;
+    overflow-x: hidden
+  }
+}
+div
+{
+  overflow-y: hidden;
+}
+h1
+{
+  font-family: montserrat, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2.5em;
+}
+h2
+{
+  font-family: montserrat, sans-serif;
+  font-weight: 750;
+  font-style: normal;
+  font-size: 5.5vh;
+}
+strong.blue
+{
+  color: #00ccff;
+}
+@media screen and (max-width: 700px)
+{
+  h2
+  {
+    font-size: 40px;
+  }
+}
+h3
+{
+  color: gray;
+  font-family: nunito-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  letter-spacing: .007em;
+  line-height: 1.25;
+}
+h3.bold
+{
+  color: gray;
+  font-family: nunito-sans, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+h3.whiteBold
+{
+  color: white;
+  font-family: nunito-sans, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+strong
+{
+  color:black;
+  font-style: normal;
+}
+p
+{
+  color: gray;
+  font-family: nunito-sans, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.1rem;
+}
+p.bold
+{
+  font-family: nunito-sans, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+p.light
+{
+  font-weight: 200
+}
+a
+{
+  font-family: nunito-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a.bold
+{
+  font-family: nunito-sans, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+a.blue
+{
+  color: #00ccff
+}
+textarea 
+{
+	border: 1px solid lightgray;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #555;
+  -moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	border-radius: 4px;
+	color: inherit;
+	display: block;
+	outline: 0;
+	padding: 0 1rem;
+	text-decoration: none;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(144, 144, 144, 0.075);
+  border-color: rgba(144, 144, 144, 0.25);
+  font-weight: 400;
+	font-size: 20px;
+	line-height: 1.65;
+}
+textarea.formControl
+{
+	border: 1px solid lightgray;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: #555;
+  -moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	border-radius: 4px;
+	color: inherit;
+	display: block;
+	outline: 0;
+	padding: 0 1rem;
+	text-decoration: none;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: rgba(144, 144, 144, 0.075);
+  border-color: rgba(144, 144, 144, 0.25);
+  font-weight: 400;
+	font-size: 20px;
+	line-height: 1.65;
+}
+input[type="text"],
+input[type="email"]
+{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 4px;
+  border: 1px solid;
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 24px 10px;
+  text-decoration: none;
+  height: 2.3rem;
+  background: rgba(144, 144, 144, 0.1);
+  border-color: rgba(144, 144, 144, 0.25);
+  font-size: 20px;
+  font-family: nunito-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus
+{
+  border-color: #5AA6ED;
+  box-shadow: 0 0 0 1px #5AA6ED;
+}
+input.fullScreen
+{
+  width: 100%;
+}
+/* Button - copied from templated css template */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    height: 4rem;
+    line-height: 2.95rem;
+    padding: 0 3rem;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 20;
+    font-family: nunito-sans, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    min-width: 80px;
+}
+
+    input[type="submit"].icon,
+    input[type="reset"].icon,
+    input[type="button"].icon,
+    button.icon,
+    .button.icon {
+        padding-left: 1.35rem;
+    }
+
+        input[type="submit"].icon:before,
+        input[type="reset"].icon:before,
+        input[type="button"].icon:before,
+        button.icon:before,
+        .button.icon:before {
+            margin-right: 0.5rem;
+        }
+
+    input[type="submit"].fit,
+    input[type="reset"].fit,
+    input[type="button"].fit,
+    button.fit,
+    .button.fit {
+        display: block;
+        margin: 0 0 1rem 0;
+        width: 100%;
+    }
+
+    input[type="submit"].small,
+    input[type="reset"].small,
+    input[type="button"].small,
+    button.small,
+    .button.small {
+        font-size: 0.8rem;
+    }
+
+    input[type="submit"].big,
+    input[type="reset"].big,
+    input[type="button"].big,
+    button.big,
+    .button.big {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    input[type="submit"].disabled, input[type="submit"]:disabled,
+    input[type="reset"].disabled,
+    input[type="reset"]:disabled,
+    input[type="button"].disabled,
+    input[type="button"]:disabled,
+    button.disabled,
+    button:disabled,
+    .button.disabled,
+    .button:disabled {
+        -moz-pointer-events: none;
+        -webkit-pointer-events: none;
+        -ms-pointer-events: none;
+        pointer-events: none;
+        opacity: 0.25;
+    }
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+    background-color: black;
+    color: white !important;
+    margin-bottom: 2%;
+}
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover,
+    input[type="button"]:hover,
+    button:hover,
+    .button:hover {
+        background-color: rgb(1, 64, 105);
+    }
+
+
+/* Element Classes*/
+.navbar
+{
+  overflow-x: hidden;
+}
+.navbar-toggle
+{
+  padding-right:0;
+  border: none;
+  margin-top: 4px;
+  width: 44px;
+  min-width: 44px
+}
+.navbar-brand
+{
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.navbar.transparent {
+  background: rgba(0,0,0,0.01);
+  box-shadow: none;
+  border: 0px;
+}
+a.navbar
+{
+  font-family: montserrat, sans-serif;
+  margin: 0;
+}
+.navbar.transparent a.navbar-brand
+{
+  color: whitesmoke;
+}
+.navbar.transparent a
+{
+  color: lightgray;
+}
+.navbar.transparent li a
+{
+  color: lightgray;
+}
+.navbar.transparent li a.active
+{
+  color: white;
+}
+.navbar.transparent li a:hover
+{
+  color: white;
+}
+.navbar li a.active
+{
+  color: black;
+}
+.navbar
+{
+  border-radius: 2px;
+  z-index: 1000000;
+}
+.fixed
+{
+  position: fixed;
+  width: 100%;
+}
+img.fullScreen
+{
+  height: auto;
+  width:100%;
+}
+.bannerImage
+{
+  width:100%;
+  height:550px;
+  background-image: url(gRunner-1m2.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+}
+@media only screen and (min-width: 500px) and (orientation: portrait)
+{
+  .bannerImage
+  {
+    background-image: url(gRunner-1m2.jpg);
+    height: 75vh;
+  }
+}
+
+.landingBannerImage
+{
+  width:100vw;
+  height:80vh;
+  background-image: url(landingBanner.png);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width:768px) and (orientation: landscape)
+{
+  .fullScreen
+  {
+    height: 100vh;
+    width: 100%
+  }
+  .bannerImage
+  {
+    height: 100vh;
+    background-position: center;
+    background-image: url(gRunner-18.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: scroll; 
+  }
+}
+@media only screen 
+  and (min-device-width: 1023px) 
+  and (max-device-width: 1367px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  {
+    .bannerImage
+    {
+      background-attachment: scroll;
+    }
+  }
+@media only screen and (min-width: 1367px)
+{
+  .bannerImage
+  {
+    background-attachment: fixed; 
+  }
+}
+.openingText
+{
+  color: white;
+  font-family: montserrat, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: .1vw;
+  font-size: 10vw;
+}
+h1.black
+{
+  color: black;
+  background: none;
+}
+@media screen and (min-width: 600px)
+{
+  .openingText
+  {
+    font-size: 6.9vw;
+  }
+}
+@media screen and (max-width: 700px)
+{
+  hr
+  {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+.text-overlay
+{
+  top: 10vh;
+  left: 40px;
+  position: absolute;
+  max-width: 50%;
+  -moz-transform: scale(1.0);
+  -webkit-transform: scale(1.0);
+  -ms-transform: scale(1.0);
+  transform: scale(1.0);
+  max-height: 100vh;
+}
+@media screen and (orientation: landscape) and (min-width: 1000px)
+{
+  .text-overlay
+  {
+    top: 25vh;
+  }
+}
+h3.white
+{
+  color: white;
+  z-index: 9999;
+  font-style: italic;
+  font-size: 2.3rem;
+}
+p.white
+{
+  color: white;
+  z-index: 9999;
+  font-style: italic;
+  font-size: 2.1rem;
+}
+h2.white
+{
+  color: white;
+  z-index: 9999;
+  font-style: italic;
+}
+.bannerText
+{
+  font-size: 2.1rem;
+}
+.tabbed
+{
+  padding-left: 20px;
+}
+.bannerButton
+{
+  /*
+  margin-top: 40px;*/
+  border-radius: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: lightgray;
+  color: black;
+  font-size: 1.8rem;
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.bannerButton:hover
+{
+  background-color: white;
+  color: black;
+  font-style: normal;
+  text-decoration: none;
+}
+.bannerButton:focus
+{
+  background-color: white;
+  color: black;
+  font-style: normal;
+  text-decoration: none;
+}
+.greybox
+{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: whitesmoke;
+  border-top: 1px solid whitesmoke;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+.wTop
+{
+  border-top: 1px solid lightgray;
+}
+.italicized
+{
+  font-weight: 600;
+  color: black;
+  font-style: italic;
+}
+.emailInput
+{
+  width: 80%;
+}
+@media screen and (min-width: 600px) and (orientation: landscape)
+{
+  .emailInput
+  {
+    width: 40%;
+  }
+}
+.racerBG
+{
+  width: 100%;
+  background-image: url(gRunner-5m.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  margin: 0;
+  padding:0;
+  background-attachment: scroll;
+}
+.countdownBG
+{
+  width: 100%;
+  background-image: url(gRunner-44.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  margin: 0;
+  padding:0;
+  background-attachment: scroll;
+  height: 300px
+}
+.centerCountdown
+{
+  padding-top: 60px
+}
+.darken
+{
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+.half
+{
+  width: 50%;
+}
+.racerBG2
+{
+  width: 100%;
+  background-image: url(kipchogeM.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  background-attachment: scroll;
+}
+@media screen and (min-width: 769px)
+{
+  .racerBG
+  {
+    background-attachment: fixed;
+    background-image: url(gRunner-41.jpg);
+  }
+  .racerBG2
+  {
+    background-image: url(kipchoge.jpg); 
+    background-attachment: fixed;
+  }
+  .countdownBG
+  {
+    background-attachment: fixed;
+    height: 600px
+  }
+  .centerCountdown
+  {
+    padding-top: 150px
+  }
+}
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  {
+    .racerBG2
+    {
+      background-attachment: scroll;
+    }
+    .racerBG
+    {
+      background-attachment: scroll;
+    }
+    .countdownBG
+    {
+      background-attachment: scroll;
+    }
+  }
+.racerBG3
+{
+  width: 100%;
+  background-image: url(splitScreen.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding:0;
+  height: 90vh;
+}
+
+@media screen and (min-width: 700px)
+{
+  .racerBG3
+  {
+    height: 75vh;
+  }
+}
+.middle
+{
+  margin-top: 50vh;
+}
+.text-block
+{
+  background-color: rgba(255, 255, 255, 0.95);
+  width:70%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  margin-left: 10px;
+}
+@media screen and (min-width: 980px)
+{
+  .text-block
+  {
+    padding-top: 120px;
+    padding-bottom: 140px;
+    padding-left:60px;
+    padding-right: 60px;
+    margin-left: 40px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+}
+.alternate
+{
+  margin-top: 80px;
+  margin-bottom: 150px;
+}
+.bigText
+{
+  font-size: 36px;
+}
+.biggerText
+{
+  font-size: 40px;
+}
+.hulkingText
+{
+  font-size: 56px;
+}
+.mText
+{
+  font-size: 6vh;
+}
+@media screen and (min-width: 700px) and (orientation: landscape)
+{
+  .bigText
+  {
+    font-size:8vh;
+  }
+  .biggerText
+  {
+    font-size: 10vh;
+  }
+  .mText
+  {
+    font-size: 7vh;
+  }
+  .hulkingText
+  {
+    font-size: 10vh;
+  }
+}
+.phone
+{
+  width: 90%;
+  padding:10px;
+  padding-top: 40px;
+}
+.wmargin
+{
+  margin-left:20px;
+  overflow-x: hidden
+}
+.subheader
+{
+  width:90%;
+}
+.subheader2
+{
+  width: 90%;
+}
+@media screen and (min-width:700px) and (orientation: landscape)
+{
+  .subheader
+  {
+    width:50%;
+  }
+  .subheader2
+  {
+    width: 65%;
+  }
+}
+.divider
+{
+  width:80%
+}
+.caption
+{
+  width: 70%;
+}
+.padded
+{
+  padding-left: 40px;
+}
+.black
+{
+  background-color: black;
+}
+.send-btn
+{
+  margin-top:10px;
+}
+.med
+{
+  font-size:1.5em;
+}
+.rText
+{
+  max-width: 90%;
+  margin-left: 5%;
+}
+.priv
+{
+  font-size: 1.5em;
+  font-family: nunito-sans, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.allSides
+{
+  margin:20px;
+  margin-right: 40px;
+}
+.mobilePadding
+{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.alternatePadding
+  {
+    padding-left: 0;
+    padding-right: 0;
+  }
+@media (min-width: 700px)
+{
+  .mobilePadding
+  {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 21vw;
+    padding-right: 21vw;
+  }
+  .alternatePadding
+  {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.miniMobilePadding
+{
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media screen and (min-width: 980px)
+{
+  .miniMobilePadding
+  {
+    padding-bottom: 10px;
+    padding-top: 0px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+.miniCard
+{
+  height: auto;
+  padding: 20px;
+  background: white;
+  overflow-y: hidden;
+  margin-bottom: 20px;
+}
+.centerMargin
+{
+  margin: 0;
+}
+@media screen and (min-width: 980px)
+{
+  .centerMargin
+  {
+    margin: 10px;
+  }
+  .miniCard
+  {
+    overflow-y: auto;
+    height: 600px;
+  }
+}
+.padding
+{
+  padding: 5px;
+}
+.cardIcon
+{
+  width: 90%;
+  padding-left: 20px;
+}
+.topPadding
+{
+  padding-top: 0;
+}
+@media screen and (min-width: 700px)
+{
+  .topPadding
+  {
+    padding-top:70px
+  }
+}
+.nopadding
+{
+  padding:0;
+  margin: 0;
+}
+.paddedRight
+{
+  padding-right: 20px;
+}
+.halfway
+{
+  padding-top: 0;
+  text-align: left;
+  overflow-y: hidden;
+}
+@media screen and (min-width: 1024px)
+{
+  .halfway
+  {
+    padding-top: 30vh;
+    padding-right: 10px;
+    text-align: left;
+  }
+}
+h3.normal
+{
+  font-style: normal;
+}
+div.ignore
+{
+  overflow-y: visible;
+}
+.yHidden
+{
+  overflow-y: hidden;
+}
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#popup {
+  display: none;
+}
+
+.popup__wrapper {
+  background: rgba(0, 0, 0, .75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.popup__container {
+  background: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin: 100px auto;
+  max-width: 100%;
+  padding: 20px;
+  width: 500px;
+}
+
+.popup__title {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+@media screen and (max-width: 1240px)
+{
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 95%; /* Could be more or less, depending on screen size */
+  }
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h3.nonItal
+{
+  font-style: normal;
+}
+
+.hiddenX
+{
+  overflow-x: hidden;
+}
+.totalPadding
+{
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+@media screen and (min-width: 700px)
+{
+  .totalPadding
+  {
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+}
+
